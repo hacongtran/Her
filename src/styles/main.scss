@@ -1,0 +1,33 @@
+// main.scss
+@import './mixin.scss';
+
+/* layout
+------------------------------------------------------------*/
+body {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  @include sp {
+    min-width: 320px;
+  }
+}
+
+//-------------------------------------------------------
+.l-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  @include tab {
+    padding: 0 2.5%;
+  }
+  @include sp {
+    padding: 0 2%;
+  }
+}
+
+.l-container2 {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+//-------------------------------------------------------
