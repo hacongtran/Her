@@ -6,6 +6,7 @@
 body {
   font-size: 1.4rem;
   line-height: 1.5;
+  font-family: var(--body-font);
   @include sp {
     min-width: 320px;
   }
@@ -28,6 +29,10 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0;
+}
+
+.u-text-cs {
+  letter-spacing: 0.05em;
 }
 
 //-------------------------------------------------------
