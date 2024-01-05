@@ -1,7 +1,8 @@
 import React from "react";
-import profileImg from "../assets/her-profile-img.png";
+import profileImg from "../assets/her-profile-img2.png";
 import shapeOne from "../assets/shape-1.png";
 import shapeTwo from "../assets/shape-2.png";
+import dueLogo from "../assets/due_logo_text.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
@@ -14,7 +15,7 @@ export default function Home() {
           Xin chào, <span>Em tên là</span>
         </p>
         <h1 className="c-home__title u-text-cs">
-          <span>THANH</span> NGỌC
+          Thanh <span>Ngọc</span>
         </h1>
         <p className="c-home__job">
           <span className="u-text-cs">Em là một</span>
@@ -29,6 +30,26 @@ export default function Home() {
               className="c-profile__img"
             />
           </div>
+          <div className="c-home__data c-home__data-one">
+            <span className="c-text-lg">
+              21<b>+</b>
+            </span>
+          </div>
+          <div className="c-home__data c-home__data-two">
+            <img src={dueLogo} alt="Trường Đại học Kinh tế Đà Nẵng logo" />
+            <span className="c-text-lg">
+              Đại học<br></br>
+              <span>Kinh Tế </span>
+              Đà Nẵng
+            </span>
+          </div>
+          <img src={shapeOne} alt="Shape dot" className="c-shape c-shape-one" />
+          <img src={shapeTwo} alt="Shape dot" className="c-shape c-shape-two" />
+          <img
+            src={shapeTwo}
+            alt="Shape dot"
+            className="c-shape c-shape-three"
+          />
         </div>
         <p className="c-home__text">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
