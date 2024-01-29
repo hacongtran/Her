@@ -7,6 +7,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.5;
   font-family: var(--body-font);
+  background-color: var(--bg-color);
   @include sp {
     min-width: 320px;
   }
@@ -40,4 +41,39 @@ body {
   filter: invert(1);
   opacity: 0.6;
 }
+
+section{
+  padding-bottom: 220px;
+}
+
+
+.c-title1{
+  font-size: var(--h1-font-size);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.c-title1__sub{
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--h5-font-size);
+  letter-spacing: 1px;
+  span{
+    font-family: var(--second-font);
+    color: var(--title-color);
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    transform: translateY(-2px);
+    display: inline-block;
+  }
+}
+
+
+
+
+
 //-------------------------------------------------------

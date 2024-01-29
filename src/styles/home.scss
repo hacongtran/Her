@@ -1,11 +1,15 @@
 @import './mixin.scss';
 
 .p-home {
+  padding-bottom: 180px;
+  background-color: var(--first-gradient);
+  background-image: var(--first-gradient);
+}
+
+.c-home__wrapper{
   min-height: 100vh;
   display: grid;
   align-items: center;
-  background-color: var(--first-gradient);
-  background-image: var(--first-gradient);
 }
 
 .c-home__container {
@@ -124,13 +128,13 @@
   .c-home__banner {
     background-color: var(--primary-color);
     padding-bottom: 100%;
-    border-radius: 46% 54% 70% 30% / 30% 68% 32% 70%;
+    border-radius: 40% 56% 73% 25%/32% 65% 35% 67%;
     .c-profile__img {
       position: absolute;
       bottom: 0;
       height: 120%;
       object-fit: cover;
-      border-radius: 40% 11% 63% 27%/43% 58% 33% 71%;
+      border-radius: 82% 23% 70% 26%/44% 70% 23% 67%;
     }
   }
   .c-shape {
@@ -207,3 +211,9 @@
   bottom: -9%;
   right: -6%;
 }
+
+
+
+
+
+

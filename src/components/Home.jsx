@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from "../assets/her-profile-img2.png";
+import profileImg from "../assets/her-profile-img3.png";
 import shapeOne from "../assets/shape-1.png";
 import shapeTwo from "../assets/shape-2.png";
 import dueLogo from "../assets/due_logo_text.png";
@@ -10,6 +10,7 @@ import { FaTiktok } from "react-icons/fa";
 export default function Home() {
   return (
     <section className="p-home" id="is-home">
+      <div className="c-home__wrapper">
       <div className="c-home__container l-container">
         <p className="c-home__subtitle u-text-cs">
           Xin chào, <span>Em tên là</span>
@@ -73,6 +74,7 @@ export default function Home() {
             Download CV
           </a>
         </nav>
+      </div>
       </div>
     </section>
   );
