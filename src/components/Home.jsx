@@ -33,7 +33,7 @@ export default function Home() {
           </div>
           <div className="c-home__data c-home__data-one">
             <span className="c-text-lg">
-              21<b>+</b>
+              22<b>+</b>
             </span>
           </div>
           <div className="c-home__data c-home__data-two">
