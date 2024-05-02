@@ -6,6 +6,7 @@ import "./styles/mixin.scss";
 import "./styles/reset.scss";
 import "./styles/main.scss";
 import "./styles/home.scss";
+import "./styles/service.scss";
 
 function App() {
   return (
