@@ -4,4 +4,135 @@
 .c-services{
     padding-top: 70px;
     
+
+}
+
+.c-service__container.l-container{
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+.c-about1__row1{
+    @include inline;
+    justify-content: space-between;
+    align-items: center;
+    .c-about1__avatar{
+        width: 45%;
+        @include inline;
+        justify-content: center;
+        position: relative;
+        .c-avatar1{
+            width: 70%;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                background-color: rgb(233, 93, 116);
+                width: 108%;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+        .c-arrow1{
+            position: absolute;
+            filter: invert(1);
+            opacity: 0.8;
+            z-index: -1;
+            width: 80%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -20%;
+        }
+    }
+    .c-about1__right{
+        width: 50%;
+        .c-about1__desc{
+            font-size: var(--large-size);
+            text-align: justify;
+        }
+    }
+}
+
+
+.c-about1__links{
+    margin-top: 25px;
+    li{
+        @include inline;
+        color: var(--title-color);
+        align-items: center;
+        + li{
+            margin-top: 8px;
+        }
+        span{
+            font-size: var(--h4-font-size);
+            margin-right: 9px;
+            @include inline;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            &.c-phone1{
+                font-size: 1.9rem;
+            }
+        }
+        p{
+            font-size: var(--normal-size);
+        }
+    }
+}
+
+.c-about2{
+    margin-top: 100px;
+}
+.c-about3{
+    margin-top: 70px;
+}
+
+.c-about__title1{
+    font-size: var(--h2-font-size);
+    font-weight: 700;
+    span{
+        position: relative;
+        color: var(--title-color);
+        &::before{
+            content: "";
+            background-color: var(--primary-color);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            width: 110%;
+            height: 35%;
+            bottom: 4px;
+        }
+    }
+}
+
+
+
+.c-skill__list{
+    margin-top: 15px;
+    @include inline;
+    flex-wrap: wrap;
+    padding: 0 5%;
+    gap: 15px 5%;
+    li{
+        @include inline;
+        width: 30%;
+        span{
+            @include inline;
+            align-items: center;
+            color: var(--primary-color);
+            font-size: 2.4rem;
+                
+        }
+        p{
+            font-size: 1.9rem;
+            font-weight: 500;
+            margin-left: 5px;
+        }
+    }
 }
