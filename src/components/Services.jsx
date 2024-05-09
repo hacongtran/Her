@@ -241,7 +241,7 @@ const Services = () => {
                                              Sáng tạo nội dung trên TikTok
                                         </li>
                                         <li>
-                                             Thiết kế edit video
+                                             Thiết kế banner, edit video
                                         </li>
                                         <li>
                                              Phối hợp và hỗ trợ với team ads bán được 1500 đơn hàng
@@ -356,22 +356,22 @@ const Services = () => {
               <div className="c-about5">
                     <div className="c-about5__left">
                          <h5 className="c-about__title1">
-                              <span>Kinh Nghiệm Làm Việc</span>
+                              <span>Hoạt động khác </span>
                          </h5>
                          <ul className="c-others__list">
                               <li>
-                                   MC các chương trình, sự kiện ( Senka, Mobifone,...)  - 2023
+                                   MC, PG các chương trình, sự kiện (Mobifone, Senka,...)  - 2023
                               </li>
                               <li>
                                    Tình nguyên viên SEEN FESTIVAL - 07/2023
-                                   <ul className="others__list2">
+                                   <ul className="c-others__list2">
                                         <li>Hỗ trợ setup chương trình</li>
                                         <li>Điều phối khách mời</li>
                                    </ul>
                               </li>
                               <li>
                                    Tình nguyên viên TIẾP SỨC MÙA THI - 06/2022
-                                   <ul className="others__list2">
+                                   <ul className="c-others__list2">
                                         <li>Điều phối phụ huynh, học sinh</li>
                                         <li>Hỗ trợ tham gia lên kế hoạch cho chương trình </li>
                                    </ul>
@@ -379,11 +379,41 @@ const Services = () => {
                          </ul>
                     </div>
                     <div className="c-about5__right">
-                         
+                         <div className="c-about5right__item">
+                              <h5 className="c-about__title1">
+                                   <span>Chứng chỉ </span>
+                              </h5>
+                              <ul className="c-certificate__list">
+                                   <li>
+                                        <p className="c-cer__desc1">TOEIC</p>
+                                        <p className="c-cer__desc2">IIG cấp ngày 16/09/2023</p>
+                                   </li>
+                                   <li>
+                                        <p className="c-cer__desc1">TIN HỌC VĂN PHÒNG NÂNG CAO</p>
+                                        <p className="c-cer__desc2">Trung tâm Phát triển Phần mềm ĐHĐN cấp 12/04/2023</p>
+                                   </li>
+                              </ul>
+                         </div>
+                         <div className="c-about5right__item">
+                              <h5 className="c-about__title1">
+                                   <span>Khóa học bổ trợ</span>
+                              </h5>
+                              <ul className="c-certificate__list">
+                                   <li>
+                                        <p className="c-cer__desc1">CONTENT PYRAMID</p>
+                                        <a href="https://center.gigan.vn/" className="c-cer__desc2">
+                                             GIGAN TRAINING CENTER
+                                             <span>
+                                                  <FiExternalLink />
+                                             </span>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
                     </div>
               </div>
         </div>
-  </section>
+     </section>
   )
 };
 

@@ -93,6 +93,19 @@
 .c-about4{
     margin-top: 60px;
 }
+.c-about5{
+    margin-top: 60px;
+    @include inline;
+    justify-content: space-between;
+    .c-about5__left{
+        width: 42%;
+    }
+    .c-about5__right{
+        width: 54%;
+        @include inline;
+        justify-content: space-between;
+    }
+}
 
 .c-about__title1{
     font-size: var(--h2-font-size);
@@ -189,7 +202,7 @@
                 margin-top: 6px;
                 background-color: var(--primary-color);
                 color: var(--title-color);
-                width: fit-content;
+                width: max-content;
                 padding: 5px 6px 5px;
                 letter-spacing: 1px;
                 word-spacing: 3px;
@@ -266,8 +279,56 @@
 .c-responsibilities__list{
     list-style-type: circle;
     margin-left: 20px;
+    margin-top: 3px;
     li{
         font-size: var(--small-size);
         font-weight: 500;
+    }
+}
+
+.c-others__list{
+    margin-top: 15px;
+    li{
+        font-size: 1.6rem;
+        font-weight: 700;
+        .c-others__list2{
+            list-style-type: circle;
+            li{
+                margin-left: 5%;
+                font-style: italic;
+                font-weight: 500;
+                color: var(--text-color);
+            }
+        }
+    }
+}
+
+
+.c-about5right__item{
+    width: 45%;
+}
+
+.c-certificate__list{
+    margin-top: 15px;
+    li{
+        + li{
+            margin-top: 12px;
+        }
+        .c-cer__desc1{
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+        .c-cer__desc2{
+            font-style: italic;
+            
+        }
+        a.c-cer__desc2{
+            span{
+                font-size: 1.7rem;
+                margin-left: 5px;
+                transform: translateY(2px);
+                display: inline-block;
+            }
+        }
     }
 }
