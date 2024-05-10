@@ -5,12 +5,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 import khaiHoanNet from "../assets/khai_hoan_net.png";
+import adpLogo from "../assets/adp_logo.png";
+import workLogo from "../assets/works.png";
+import other1 from "../assets/models.jpg";
 import { PiDotFill } from "react-icons/pi";
 import {projects} from "../Data";
-
+import { FiExternalLink } from "react-icons/fi";
 
 
 const Project = () => {
@@ -50,6 +53,10 @@ const Project = () => {
                               </div>
                             </div>
                             <Swiper 
+                                    autoplay={{
+                                        delay: 3000,
+                                        pauseOnMouseEnter: true,
+                                    }}
                                     pagination={{
                                          clickable: true,
                                     }}
@@ -67,7 +74,7 @@ const Project = () => {
                                         spaceBetween: 30,
                                     },
                                     }}
-                                modules={[Pagination]}
+                                modules={[Autoplay, Pagination]}
                                 className="c-banner__list mySwiper">
                                 {projects.map(({img, alt},index) => {
                                     return(
@@ -78,7 +85,114 @@ const Project = () => {
                                 })}
                             </Swiper>
                         </li> 
+                        <li className="c-project__item2">
+                            <div className="c-proitem2__title">
+                                <span className="c-span1">
+                                  <PiDotFill />
+                                </span>
+                                <h5>Thiết kế landing page</h5>
+                            </div>
+                            <div className="c-proitem2__row">
+                              <p className="c-proitem2__uses c-proitem2__uses1">
+                                 Công cụ sử dụng: 
+                              </p>
+                              <div className="c-proitem2__programs">
+                                  <span>Ladipage.vn</span>
+                              </div>
+                            </div>
+                              <div className="c-project__webs">
+                                    <p className="c-prowebs__left">
+                                        Một số website landing page đã thực hiện:
+                                    </p>
+                                    <ul className="c-prowebs__list">
+                                        <li>
+                                            <a href="https://www.skinever.asia/tinh-chat-houmal" target='_blank'>
+                                                https://skinever.asia/tinh-chat-houmal
+                                                <span>
+                                                    <FiExternalLink />
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.skinever.asia/sua-rua-mat-sieu-bot-syrinx" target='_blank'>
+                                                https://skinever.asia/sua-rua-mat-sieu-bot-syrinx
+                                                <span>
+                                                    <FiExternalLink />
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.skinever.asia/tinh-chat-golden-peony" target='_blank'>
+                                                https://skinever.asia/tinh-chat-golden-peony
+                                                <span>
+                                                    <FiExternalLink />
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                              </div>
+
+                        </li> 
+                        <li className="c-project__item2">
+                            <div className="c-proitem2__title">
+                                <span className="c-span1">
+                                  <PiDotFill />
+                                </span>
+                                <h5>Lên content, kịch bản cho việc quay dựng video</h5>
+                            </div>
+                            <div className="c-google__excel">
+                                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1EAYeUezFArM2rVSf3VkWOcRn558p6N8pV1wj7WFa7g0vbS2csxmSOQC2qvdE9fl8fhjnSU6GdGcX/pubhtml?widget=true&amp;headers=false"></iframe>
+                            </div>
+                        </li> 
                     </ul>
+                </li>
+                <li>
+                    <div className="c-project__brand">
+                          <div className="c-project__top c-project__top2">
+                              <img src={adpLogo} alt="Khải Hoàn Net logo" />
+                          </div>
+                          <h4 className="c-projecttop__title c-projecttop__title2">
+                              CÔNG TY CP XÂY DỰNG<br>
+                              </br> VÀ PHÁT TRIỂN THƯƠNG HIỆU ADP 
+                          </h4>
+                    </div>
+                    <ul className="c-project__list2">
+                        <li className="c-project__item2">
+                            <div className="c-proitem2__title">
+                                <span className="c-span1">
+                                  <PiDotFill />
+                                </span>
+                                <h5>Thiết kế banner quảng cáo</h5>
+                            </div>
+
+                        </li> 
+                    </ul>
+                </li>
+                <li>
+                    <div className="c-project__brand">
+                          <div className="c-project__top c-project__top3">
+                              <img src={workLogo} alt="Công việc khác" />
+                          </div>
+                          <h4 className="c-projecttop__title c-projecttop__title3">
+                                Các công việc khác:
+                          </h4>
+                    </div>
+                          <div className="c-others__slider">
+                                <div className="c-others__item">
+                                    <div className="c-others__image">
+                                        <img src={other1} alt="Trà Nhà" />
+                                    </div>
+                                    <div className="c-others__bottom">
+                                        <h5 className="c-othersbottom__name">
+                                            Làm mẫu ảnh cho các brand
+                                        </h5>
+                                        <p className="c-othersbottom__desc">
+                                            Tham gia chụp ảnh, pr cho quán "Trà Là Nhà"
+                                        </p>
+                                    </div>
+                                </div>
+                          </div>
+
                 </li>
             </ul>
          </div>
