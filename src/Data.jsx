@@ -2,6 +2,7 @@ import banner1 from './assets/banner_canva1.png';
 import banner2 from './assets/banner_canva2.jpg';
 import banner3 from './assets/banner_canva3.png';
 import banner4 from './assets/banner_canva4.png';
+import banner5 from './assets/banner_canva5.jpg';
 
 export const projects = [
     {
@@ -23,6 +24,11 @@ export const projects = [
         id: 4,
         img: banner4,
         alt: 'Syrinx - sữa sử mặt nội địa trung',
+    },
+    {
+        id: 5,
+        img: banner5,
+        alt: 'Golden Peony - Tinh chất trẻ hóa làn da',
     }
     
 ]

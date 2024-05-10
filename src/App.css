@@ -11,9 +11,10 @@
   --primary-color: hsl(350, 100%, 61%);
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 90%);
+  --black-color: #212F3C;
   --bg-color: hsl(216, 18%, 16%);
   --bg-color-alt: hsl(213, 10%, 21%);
-  --container-color: hsl(210, 18%, 14%);
+  --container-color: hsl(208, 22%, 13%);
   --border-color: hsl(210, 2%, 65%);
   --first-gradient: linear-gradient(
     0deg,
