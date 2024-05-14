@@ -11,6 +11,19 @@ import khaiHoanNet from "../assets/khai_hoan_net.png";
 import adpLogo from "../assets/adp_logo.png";
 import workLogo from "../assets/works.png";
 import other1 from "../assets/models.jpg";
+import other1Logo from "../assets/other1_logo.png"
+import other2 from "../assets/other2.jpg";
+import other2Logo from "../assets/fpt.png"
+import other3 from "../assets/other3.jpg";
+import other3Logo from "../assets/senka.png"
+import other4 from "../assets/other4.jpg";
+import other4Logo from "../assets/mobifone.png"
+
+
+
+
+
+
 import { PiDotFill } from "react-icons/pi";
 import {projects} from "../Data";
 import { FiExternalLink } from "react-icons/fi";
@@ -141,7 +154,7 @@ const Project = () => {
                                 <h5>Lên content, kịch bản cho việc quay dựng video</h5>
                             </div>
                             <div className="c-google__excel">
-                                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1EAYeUezFArM2rVSf3VkWOcRn558p6N8pV1wj7WFa7g0vbS2csxmSOQC2qvdE9fl8fhjnSU6GdGcX/pubhtml?widget=true&amp;headers=false"></iframe>
+                                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSgPLJX6KAW0uIJ3RRTin4bg3zZKyphOznbdfbYLrKHXs6g2b8kT_VTBBgrc8qcw7Up8mCD9xJ-YBk_/pubhtml?widget=true&amp;headers=false"></iframe>
                             </div>
                         </li> 
                     </ul>
@@ -162,9 +175,22 @@ const Project = () => {
                                 <span className="c-span1">
                                   <PiDotFill />
                                 </span>
-                                <h5>Thiết kế banner quảng cáo</h5>
+                                <h5>Hỗ trợ báo giá, soạn hợp đồng, viết báo cáo, brief</h5>
                             </div>
-
+                            <div className="c-google__excel c-google__excel2">
+                                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vREFPG6Ws-p98D-7XQPHqt8Q8jP59dbMy-FIF33LcGrtKM82rpBcaIKyR3WcZFz-Zi1TtUijAf9SQyY/pubhtml?widget=true&amp;headers=false"></iframe>
+                            </div>    
+                        </li> 
+                        <li className="c-project__item2">
+                            <div className="c-proitem2__title">
+                                <span className="c-span1">
+                                  <PiDotFill />
+                                </span>
+                                <h5>Tham gia phỏng vấn, tuyển dụng thực tập sinh</h5>
+                            </div>
+                            <div className="c-google__excel c-google__excel2 c-google__excel3">
+                                <iframe src="https://docs.google.com/document/d/e/2PACX-1vSd5AXHMZpkYWtEFGV2W4W5NrjfgaHlbfdLQb9PQgv8EotTb4bcVOywtf3FUWlBs6cDdGGbPvRQ_hk7/pub?embedded=true"></iframe>
+                            </div>    
                         </li> 
                     </ul>
                 </li>
@@ -181,6 +207,9 @@ const Project = () => {
                                 <div className="c-others__item">
                                     <div className="c-others__image">
                                         <img src={other1} alt="Trà Nhà" />
+                                        <div className="c-others__logo">
+                                            <img src={other1Logo} alt="Trà Là Nhà logo" />
+                                        </div>
                                     </div>
                                     <div className="c-others__bottom">
                                         <h5 className="c-othersbottom__name">
@@ -189,6 +218,38 @@ const Project = () => {
                                         <p className="c-othersbottom__desc">
                                             Tham gia chụp ảnh, pr cho quán "Trà Là Nhà"
                                         </p>
+                                        <a href="https://www.facebook.com/photo/?fbid=354366127343119&set=a.132980462815021" target='_blank' className="c-link">
+                                            <span className="c-link__txt">
+                                                Trà Là Nhà
+                                            </span>
+                                            <span className="c-link__icon">
+                                                <FiExternalLink />
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="c-others__item">
+                                    <div className="c-others__image">
+                                        <img src={other1} alt="Trà Nhà" />
+                                        <div className="c-others__logo">
+                                            <img src={other1Logo} alt="Trà Là Nhà logo" />
+                                        </div>
+                                    </div>
+                                    <div className="c-others__bottom">
+                                        <h5 className="c-othersbottom__name">
+                                            PG cho workshop của FPT
+                                        </h5>
+                                        <p className="c-othersbottom__desc">
+                                             Check-in khách hàng và hướng dẫn ra booth FPT nhận quà check in.
+                                        </p>
+                                        <a href="https://www.facebook.com/photo/?fbid=354366127343119&set=a.132980462815021" target='_blank' className="c-link">
+                                            <span className="c-link__txt">
+                                                Trà Là Nhà
+                                            </span>
+                                            <span className="c-link__icon">
+                                                <FiExternalLink />
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                           </div>
