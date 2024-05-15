@@ -76,7 +76,8 @@
                 }
             }
             h5{
-                font-weight: 500;
+                font-weight: 700;
+                font-family: var(--third-font);
                 text-align: justify;
                 font-size: 2.6rem;
             }
@@ -240,6 +241,20 @@
     margin-top: 30px;
     border: 5px solid #b4882a;
     border-radius: 12px;
+    &.c-google__excel2{
+        border-color: #0c92e5;
+    }
+    &.c-google__excel3{
+        background-color: #fff;
+        @include inline;
+        justify-content: center;
+        .c18.doc-content{
+            margin: 0 auto;
+        }
+        .c18{
+            margin: 0 auto !important;
+        }
+    }
     #doc-title .name{
         color: #b4882a;
         font-weight: 700;
@@ -269,9 +284,19 @@
         border-radius: 25px;
         overflow: hidden;
         .c-others__image{
-            img{
+            position: relative;
+            > img{
                 object-fit: cover;
                 aspect-ratio: 163 / 150;
+            }
+            .c-others__logo{
+                position: absolute;
+                background-color: rgba($color: #fff, $alpha: 0.75);
+                width: 100px;
+                padding: 5px;
+                border-radius: 13px;
+                right: 3%;
+                bottom: 3%;
             }
         }
         .c-others__bottom{
@@ -280,6 +305,36 @@
             .c-othersbottom__name{
                 font-size: 2rem;
                 font-weight: 500;
+            }
+            .c-othersbottom__desc{
+                text-align: justify;
+            }
+            .c-link{
+                margin-left: auto;
+                margin-top: 6px;
+                width: max-content;
+                border: 2px solid var(--title-color);
+                @include inline;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+                padding: 3px 11px 4px;
+                border-radius: 22px;
+                @include trans1;
+                &:hover{
+                    background-color: var(--title-color);
+                    opacity: 1;
+                    color: var(--black-color);
+                }
+                .c-link__txt{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }   
+                .c-link__icon{
+                    @include inline;
+                    align-items: center;
+                    font-size: 1.5rem;
+                } 
             }
         }
     }

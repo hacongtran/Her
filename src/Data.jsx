@@ -4,6 +4,7 @@ import banner3 from './assets/banner_canva3.png';
 import banner4 from './assets/banner_canva4.png';
 import banner5 from './assets/banner_canva5.jpg';
 
+
 export const projects = [
     {
         id: 1,
@@ -32,3 +33,35 @@ export const projects = [
     }
     
 ]
+
+
+// export const others = [
+//     {
+//         id: 1,
+//         img: banner1,
+//         alt: 'Golden Peony - Tinh chất trẻ hóa làn da',
+//     },
+//     {
+//         id: 2,
+//         img: banner2,
+//         alt: 'Houmal - Tinh chất hút tàn nhang, đồi mồi',
+//     },
+//     {
+//         id: 3,
+//         img: banner3,
+//         alt: 'Anti - acne Kem trị sẹo mờ thâm',
+//     },
+//     {
+//         id: 4,
+//         img: banner4,
+//         alt: 'Syrinx - sữa sử mặt nội địa trung',
+//     },
+//     {
+//         id: 5,
+//         img: banner5,
+//         alt: 'Golden Peony - Tinh chất trẻ hóa làn da',
+//     }
+    
+// ]
+
+
