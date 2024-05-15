@@ -1,0 +1,70 @@
+@import './mixin.scss';
+
+.c-contact{
+   background-image: var(--second-gradient);
+   padding: 110px 0;
+   .l-container{
+    max-width: 1200px;
+   }
+}
+
+.c-contact__container{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    margin-top: 45px;
+}
+
+.c-contact__card{
+    margin-bottom: 40px;
+    padding-left: 115px;
+    position: relative;
+}
+
+.c-contact__card-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow);
+    font-size: var(--larger-size);
+    display: grid;
+    place-items: center;
+    &::after{
+        content: "";
+        width: 40px;
+        height: 2px;
+        background-color: var(--border-color);
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-1px);
+    }
+}
+
+.c-form__input{
+    border: 2px solid var(--border-color);
+    background-color: var(--container-color);
+}
+
+.c-contact__card-title{
+    font-size: var(--h3-font-size);
+    font-family: var(--soft-font);
+    padding-block: 6px;
+    line-height: 1;
+    
+}
+
+.c-contact__card-desc{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--fourth-font);
+
+}
+
+.c-form__grid{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}

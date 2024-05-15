@@ -271,37 +271,105 @@
     }
 }
 
+.c-other__container{
+    padding: 0 5%;
+      .swiper-wrapper{
+        margin-bottom: 35px;
+    }
+
+ 
+
+        .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        height: auto; /* This ensures that the height of each slide adjusts to its content */
+        }
+
+
+    .swiper-pagination-bullets {
+        width: auto;
+        position: relative;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);        
+        &::before{
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 98%;
+            background-color: var(--title-color);
+            left: 50%;
+            top: 47%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+        border: 2px solid var(--title-color);
+        background-color: var(--container-color);
+        z-index: 1;
+        position: unset;
+        opacity: 1;
+        margin: 0;
+        width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 11px));
+        height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 11px));
+        @include trans1;
+    }
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child){
+        margin-right: 20px;
+    }
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        width: 13px;
+        height: 13px;
+        background-color: var(--primary-color);
+        transform: translateY(1px);
+    }
+}
 
 .c-others__slider{
-    @include inline;
-    justify-content: space-between;
     margin-top: 25px;
-    padding: 0 5%;
     .c-others__item{
         @include inline;
-        width: 31%;
         flex-direction: column;
         border-radius: 25px;
         overflow: hidden;
+        height: 100%;
         .c-others__image{
             position: relative;
             > img{
                 object-fit: cover;
                 aspect-ratio: 163 / 150;
+                flex-shrink: 0;
             }
             .c-others__logo{
                 position: absolute;
                 background-color: rgba($color: #fff, $alpha: 0.75);
-                width: 100px;
                 padding: 5px;
                 border-radius: 13px;
                 right: 3%;
                 bottom: 3%;
+                width: 100px;
+                &.c-others__logo1{
+                    width: 100px;
+                }
+                &.c-others__logo2{
+                    width: 90px;
+                }
+                &.c-others__logo3{
+                    width: 130px;
+                }
+                &.c-others__logo4{
+                    width: 140px;
+                    padding: 6px 13px;
+                }
             }
         }
         .c-others__bottom{
             background-color: var(--container-color);
             padding: 10px 15px 14px;
+            // margin-top: auto;
+            flex: 1;
             .c-othersbottom__name{
                 font-size: 2rem;
                 font-weight: 500;
@@ -338,4 +406,10 @@
             }
         }
     }
+    
+}
+
+
+.custom-iframe{
+    
 }
