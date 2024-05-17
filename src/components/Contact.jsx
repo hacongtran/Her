@@ -6,6 +6,26 @@ import { FaRegAddressBook, FaRegEnvelope, FaRegUser, FaRegMap } from "react-icon
 
 
 const Contact = () => {
+
+    const [form, setForm] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    });
+
+    const handleChange = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        setForm({ ...form, [name]: value});
+    }
+
+
+
+
+
+
+
   return (
     <section className="c-contact c-section" id="is-contact">
         <div className="l-container">
@@ -69,21 +89,51 @@ const Contact = () => {
                                 <label className="c-contact__form-tag">
                                     Tên của bạn <b>*</b>
                                 </label>
-                                <input type="text" className="c-form__input" />
+                                <input 
+                                    type="text" 
+                                    name='name' 
+                                    onChange={handleChange}
+                                    value={form.name} 
+                                    className="c-form__input" />
                             </div>
                             <div className="c-form__row">
                                 <label className="c-contact__form-tag">
                                     Địa chỉ email <b>*</b>
                                 </label>
-                                <input type="text" className="c-form__input" />
+                                <input 
+                                    type="email" 
+                                    name='email' 
+                                    onChange={handleChange}
+                                    value={form.email} 
+                                    className="c-form__input" />
+                            </div>
+                        </div>
+                            <div className="c-form__row">
+                                <label className="c-contact__form-tag">
+                                    Tiêu đề <b>*</b>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    name='subject' 
+                                    onChange={handleChange}
+                                    value={form.subject} 
+                                    className="c-form__input" />
                             </div>
                             <div className="c-form__row c-form__row-area">
                                 <label className="c-contact__form-tag">
                                     Nội dung <b>*</b>
                                 </label>
-                                <textarea className="c-form__input" />
+                                <textarea 
+                                    name='message' 
+                                    onChange={handleChange}
+                                    value={form.message} 
+                                className="c-form__input" />
                             </div>
-                        </div>
+                            <div className="c-contact__submit">
+                                <button className="c-submit">
+                                     GỬI CHO TÔI
+                                </button>
+                            </div>
                     </form>
                 </div>
             </div>
