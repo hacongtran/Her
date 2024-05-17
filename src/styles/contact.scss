@@ -65,6 +65,82 @@
 }
 
 .c-form__grid{
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
 }
+
+.c-form__row{
+    display: grid;
+    row-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.c-contact__form-tag{
+    margin-left: 30px;
+    font-size: var(--smaller-font-size);
+    line-height: 1.7;
+    font-weight: 700;
+    font-size: 1.6rem;
+    b{
+        color: var(--primary-color);
+    }
+}
+.c-form__input{
+    color: var(--title-color);
+    height: 52px;
+    border-radius: 30px;
+    padding-inline: 30px;
+    appearance: none;
+    font-size: 1.5rem;
+    line-height: 1.45;
+}
+.c-form__row-area textarea{
+    height: 140px;
+    resize: none;
+    padding-block: 20px;
+}
+
+
+
+  .c-submit {
+    margin-left: auto;
+    color: var(--title-color);
+    font-size: var(--tiny-font-size);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    height: 54px;
+    max-width: max-content;
+    @include inline;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--border-color);
+    padding-inline: 38px;
+    border-radius: 54px;
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: all 0.7s var(--transition1);
+    z-index: 2;
+    background-color: transparent;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 2px;
+      border-radius: inherit;
+      background-color: var(--primary-color);
+      transform: scale(0.3);
+      filter: blur(10px);
+      opacity: 0;
+      transition: all 0.7s var(--transition1);
+      z-index: -1;
+    }
+    &:hover {
+      opacity: 1;
+      &::before {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+      }
+    }
+  }
