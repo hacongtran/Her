@@ -1,0 +1,54 @@
+@import './mixin.scss';
+
+
+
+.c-nav__menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 512px;
+    height: 100vh;
+    background-color: var(--bg-color-alt);
+    z-index: 10;
+}
+
+.c-nav__data{
+    padding: 80px 84px 0 154px;
+    margin: auto;
+    width: 100%;
+}
+
+.c-nav__list{
+    margin-bottom: 40px;
+}
+
+.c-nav__list li{
+    margin-bottom: 20px;
+}
+
+.c-nav__link{
+    color: var(--title-color);
+    font-size: var(--h5-font-size);
+    font-weight: 700;
+    transition: all 0.4s var(--transition1);
+    &:hover{
+        color: var(--primary-color);
+    }
+}
+
+
+.c-header__socials {
+  @include inline;
+  gap: 0 20px;
+  align-items: center;
+  .c-header__social-link {
+    color: var(--title-color);
+    font-size: var(--h5-font-size);
+    transition: all 0.3s var(--transition1);
+    @include inline;
+    align-items: center;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
