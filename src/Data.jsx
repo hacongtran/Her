@@ -94,3 +94,25 @@ export const others = [
 ];
 
 
+export const links = [
+    {
+        name: 'Trang chủ',
+        path: 'home',
+    },
+    {
+        name: 'Về Tôi',
+        path: 'about',
+    },
+    {
+        name: 'Kinh nghiệm',
+        path: 'project',
+    },
+    {
+        name: 'Sản phẩm',
+        path: 'product',
+    },
+    {
+        name: 'Liên hệ',
+        path: 'contact',
+    },
+]
