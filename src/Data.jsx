@@ -97,22 +97,22 @@ export const others = [
 export const links = [
     {
         name: 'Trang chủ',
-        path: 'home',
+        path: 'is-home',
     },
     {
         name: 'Về Tôi',
-        path: 'about',
+        path: 'is-about',
     },
     {
         name: 'Kinh nghiệm',
-        path: 'project',
+        path: 'is-experience',
     },
     {
         name: 'Sản phẩm',
-        path: 'product',
+        path: 'is-project',
     },
     {
         name: 'Liên hệ',
-        path: 'contact',
-    },
-]
+        path: 'is-contact',
+    }
+];

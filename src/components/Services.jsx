@@ -16,7 +16,7 @@ import { LuCheckCheck } from "react-icons/lu";
 
 const Services = () => {
   return (
-     <section className="c-services c-section" id="is-service">
+     <section className="c-services c-section" id="is-about">
          <h2 className="c-title1">
               About Me
          </h2>
@@ -160,7 +160,7 @@ const Services = () => {
                          </li>
                     </ul>
               </div>
-              <div className="c-about4">
+              <div className="c-about4" id="is-experience">
                     <h4 className="c-about__title1">
                          <span>Kinh Nghiệm Làm Việc</span>
                     </h4>

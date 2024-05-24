@@ -44,6 +44,7 @@
 }
 
 .c-home__title {
+  color: #ffffff;
   font-size: var(--biggest-font-size);
   text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
     2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%),
@@ -58,9 +59,12 @@
 }
 
 .c-home__text {
-  font-size: var(--large-size);
+  font-size: 1.55rem;
+  font-weight: 500;
   margin: 12px 0 30px;
   max-width: 520px;
+  font-family: var(--fourth-font);
+  text-align: justify;
 }
 
 .c-home__socials {
