@@ -37,8 +37,8 @@
   --third-font: 'Dancing Script', cursive;
   --fourth-font: 'Poppins', sans-serif;
   --soft-font: 'Pacifico', cursive;
-  --shadow: 5px 5px rgb(255, 255, 255, 10%);
-  --shadow2: 3px 3px rgb(255, 255, 255, 10%);
+  --shadow: 5px 5px 5px rgb(255, 255, 255, 10%);
+  --shadow2: 3px 3px 3px rgb(255, 255, 255, 10%);
   --transition1: cubic-bezier(0.3, 0, 0.3, 1);
   --transition2: all 0.25s ease;
 
@@ -56,3 +56,20 @@
   --smaller-size: 1.4rem;
   --tiny-size: 1.3rem;
 }
+
+
+
+/* Light Theme */
+.light-theme{
+  --title-color: #000;
+  --text-color: #262626;
+  --black-color: #f0ebe3;
+  --bg-color: #f0ebe3;
+  --bg-color-alt: #ffffff;
+  --container-color: #ffffff;
+  --border-color: #000;
+    --shadow: 5px 5px rgb(0, 0, 0, 20%);
+  --shadow2: 3px 3px rgb(0, 0, 0, 10%);
+}
+
+

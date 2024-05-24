@@ -17,8 +17,7 @@ import workLogo from "../assets/works.png";
 
 
 import { PiDotFill } from "react-icons/pi";
-import {projects} from "../Data";
-import { others } from '../Data';
+import {projects, others} from "../Data";
 import { FiExternalLink } from "react-icons/fi";
 
 
@@ -139,6 +138,31 @@ const Project = () => {
                                         </li>
                                     </ul>
                               </div>
+
+                        </li> 
+                        <li className="c-project__item2">
+                            <div className="c-proitem2__title">
+                                <span className="c-span1">
+                                  <PiDotFill />
+                                </span>
+                                <h5>Thiết kế, edit video cho việc chạy ads</h5>
+                            </div>
+                            <div className="c-proitem2__row">
+                              <p className="c-proitem2__uses c-proitem2__uses1">
+                                 Công cụ sử dụng: 
+                              </p>
+                              <div className="c-proitem2__programs">
+                                  <span>Capcut</span>
+                              </div>
+                            </div>
+                            <ul className="c-videos__list">
+                                <li className="c-video__item">
+                                    <iframe src="https://www.youtube.com/embed/xJUNLE7kJRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </li>    
+                                <li className="c-video__item">
+                                    <iframe src="https://www.youtube.com/embed/gPc3PI8kwtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </li>    
+                            </ul>    
 
                         </li> 
                         <li className="c-project__item2">

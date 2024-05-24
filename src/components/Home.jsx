@@ -3,9 +3,9 @@ import profileImg from "../assets/her-profile-img3.png";
 import shapeOne from "../assets/shape-1.png";
 import shapeTwo from "../assets/shape-2.png";
 import dueLogo from "../assets/due_logo_text.png";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import CV from "../assets/cv_thanhngoc_mkt.pdf"
+
 
 export default function Home() {
   return (
@@ -53,10 +53,7 @@ export default function Home() {
           />
         </div>
         <p className="c-home__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
-          veritatis dolorem sunt, repellat facere placeat impedit at maiores
-          aliquid quaerat ipsum odio incidunt obcaecati ipsa deserunt iure
-          soluta nulla quis!
+            Xin chào, em là Trần Thị Thanh Ngọc. Em luôn khao khát được làm việc trong một môi trường chuyên nghiệp để phát triển bản thân và đóng góp cho xã hội. Mong muốn của tôi là có cơ hội học hỏi và cống hiến, để mỗi ngày đi làm đều là một trải nghiệm đáng nhớ.
         </p>
         <nav className="c-home__socials">
           <a href="#" target="_blank" className="c-home__social-link">
@@ -70,7 +67,7 @@ export default function Home() {
           </a>
         </nav>
         <nav className="c-home__btns">
-          <a href="#" className="c-home__btn">
+          <a href={CV} target="_blank" className="c-home__btn">
             Download CV
           </a>
         </nav>
