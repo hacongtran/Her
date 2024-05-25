@@ -6,7 +6,6 @@ import excelIcon from "../assets/excel.png";
 import canvaIcon from "../assets/canva.webp";
 import capCutIcon from "../assets/capcut.png";
 import photoShopIcon from "../assets/photoshop.png";
-// import arrowImg1 from "../assets/arrow_img1.png"
 import { FiExternalLink } from "react-icons/fi";
 import { IoMdFemale } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -50,7 +49,7 @@ const Services = () => {
                                    <span className="c-phone1">
                                    <FaPhoneAlt />
                                    </span>
-                                   <p>0853098234</p>
+                                   <p>0853-098-234</p>
                               </li>
                               <li>      
                                    <span>

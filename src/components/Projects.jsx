@@ -10,14 +10,6 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import khaiHoanNet from "../assets/khai_hoan_net.png";
 import adpLogo from "../assets/adp_logo.png";
 import workLogo from "../assets/works.png";
-import other1 from "../assets/models.jpg";
-import other1Logo from "../assets/other1_logo.png"
-import other2 from "../assets/other2.jpg";
-import other2Logo from "../assets/fpt.png"
-import other3 from "../assets/other3.jpg";
-import other3Logo from "../assets/senka.png"
-import other4 from "../assets/other4.jpg";
-import other4Logo from "../assets/mobifone.png"
 
 
 
@@ -26,7 +18,10 @@ import other4Logo from "../assets/mobifone.png"
 
 import { PiDotFill } from "react-icons/pi";
 import {projects} from "../Data";
+import { others } from '../Data';
 import { FiExternalLink } from "react-icons/fi";
+
+
 
 
 const Project = () => {
@@ -189,7 +184,7 @@ const Project = () => {
                                 <h5>Tham gia phỏng vấn, tuyển dụng thực tập sinh</h5>
                             </div>
                             <div className="c-google__excel c-google__excel2 c-google__excel3">
-                                <iframe src="https://docs.google.com/document/d/e/2PACX-1vSd5AXHMZpkYWtEFGV2W4W5NrjfgaHlbfdLQb9PQgv8EotTb4bcVOywtf3FUWlBs6cDdGGbPvRQ_hk7/pub?embedded=true"></iframe>
+                                <iframe class="custom-iframe" src="https://docs.google.com/document/d/e/2PACX-1vSd5AXHMZpkYWtEFGV2W4W5NrjfgaHlbfdLQb9PQgv8EotTb4bcVOywtf3FUWlBs6cDdGGbPvRQ_hk7/pub?embedded=true"></iframe>
                             </div>    
                         </li> 
                     </ul>
@@ -203,56 +198,64 @@ const Project = () => {
                                 Các công việc khác:
                           </h4>
                     </div>
-                          <div className="c-others__slider">
-                                <div className="c-others__item">
-                                    <div className="c-others__image">
-                                        <img src={other1} alt="Trà Nhà" />
-                                        <div className="c-others__logo">
-                                            <img src={other1Logo} alt="Trà Là Nhà logo" />
+                    <div className="c-other__container">
+                        <Swiper 
+                                autoplay={{
+                                    delay: 50000,
+                                    pauseOnMouseEnter: true,
+                                }}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                breakpoints={{
+                                    540: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 30,
+                                    },
+                                    768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 30,
+                                    },
+                                    1200: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 30,
+                                    },
+                                }}
+                                modules={[Autoplay, Pagination]}
+                                className="c-banner__list mySwiper"
+                            >
+                                {others.map(({ img, alt, logo, logoAlt, name, desc, link, linkText }, index) => (
+                                    <SwiperSlide key={index} className="c-others__slider">
+                                        <div className="c-others__item">
+                                            <div className="c-others__image">
+                                                <img src={img} alt={alt} />
+                                                <div className={`c-others__logo c-others__logo${index + 1}`}>
+                                                    <img src={logo} alt={logoAlt} />
+                                                </div>
+                                            </div>
+                                            <div className="c-others__bottom">
+                                                <h5 className="c-othersbottom__name">
+                                                    {name}
+                                                </h5>
+                                                <p className="c-othersbottom__desc">
+                                                    {desc}
+                                                </p>
+                                                {link && (
+                                                    <a href={link} target='_blank' rel="noopener noreferrer" className="c-link">
+                                                        <span className="c-link__txt">
+                                                            {linkText}
+                                                        </span>
+                                                        <span className="c-link__icon">
+                                                            <FiExternalLink />
+                                                        </span>
+                                                    </a>
+                                                )}
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="c-others__bottom">
-                                        <h5 className="c-othersbottom__name">
-                                            Làm mẫu ảnh cho các brand
-                                        </h5>
-                                        <p className="c-othersbottom__desc">
-                                            Tham gia chụp ảnh, pr cho quán "Trà Là Nhà"
-                                        </p>
-                                        <a href="https://www.facebook.com/photo/?fbid=354366127343119&set=a.132980462815021" target='_blank' className="c-link">
-                                            <span className="c-link__txt">
-                                                Trà Là Nhà
-                                            </span>
-                                            <span className="c-link__icon">
-                                                <FiExternalLink />
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div className="c-others__item">
-                                    <div className="c-others__image">
-                                        <img src={other1} alt="Trà Nhà" />
-                                        <div className="c-others__logo">
-                                            <img src={other1Logo} alt="Trà Là Nhà logo" />
-                                        </div>
-                                    </div>
-                                    <div className="c-others__bottom">
-                                        <h5 className="c-othersbottom__name">
-                                            PG cho workshop của FPT
-                                        </h5>
-                                        <p className="c-othersbottom__desc">
-                                             Check-in khách hàng và hướng dẫn ra booth FPT nhận quà check in.
-                                        </p>
-                                        <a href="https://www.facebook.com/photo/?fbid=354366127343119&set=a.132980462815021" target='_blank' className="c-link">
-                                            <span className="c-link__txt">
-                                                Trà Là Nhà
-                                            </span>
-                                            <span className="c-link__icon">
-                                                <FiExternalLink />
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                          </div>
+                                    </SwiperSlide>
+                                ))}
+                        </Swiper>
+                    </div>
 
                 </li>
             </ul>
