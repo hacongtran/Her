@@ -10,12 +10,20 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    @include minitab{
+      grid-template-columns: 1fr;
+      justify-content: center;
+      row-gap: 12px;
+    }
 }
 
 .c-footer__socials {
   @include inline;
   gap: 0 20px;
   align-items: center;
+  @include minitab{
+    justify-content: center;
+  }
   .c-footer__social-link {
     color: var(--title-color);
     font-size: var(--h5-font-size);
@@ -46,5 +54,9 @@
     font-size: var(--tiny--font-size);
     span{
         color: var(--primary-color);
+    }
+    @include minitab{
+      text-align: center;
+      justify-self: center;
     }
 }
