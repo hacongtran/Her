@@ -41,7 +41,6 @@
   --shadow2: 3px 3px 3px rgb(255, 255, 255, 10%);
   --transition1: cubic-bezier(0.3, 0, 0.3, 1);
   --transition2: all 0.25s ease;
-
   --biggest-font-size: 9rem;
   --h1-font-size: 4.4rem;
   --h2-font-size: 3rem;
@@ -71,5 +70,8 @@
     --shadow: 5px 5px rgb(0, 0, 0, 20%);
   --shadow2: 3px 3px rgb(0, 0, 0, 10%);
 }
+
+
+
 
 

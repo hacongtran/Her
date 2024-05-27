@@ -4,6 +4,7 @@ import Logo from '../assets/logo.svg';
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { Link, animateScroll } from 'react-scroll';
+import shapeOne from "../assets/shape-1.png";
 
 import { links } from '../Data';
 
@@ -84,16 +85,19 @@ const Header = () => {
                             })}
                         </ul>
                         <nav className="c-header__socials">
-                            <a href="#" target="_blank" className="c-header__social-link">
+                            <a href="https://www.facebook.com/profile.php?id=100015857587064" target="_blank" className="c-header__social-link">
                                 <FaFacebook />
                             </a>
-                            <a href="#" target="_blank" className="c-header__social-link">
+                            <a href="https://www.instagram.com/tranthngoc/" target="_blank" className="c-header__social-link">
                                 <FaInstagram />
                             </a>
-                            <a href="#" target="_blank" className="c-header__social-link">
+                            <a href="https://www.tiktok.com/@thichmatcha15" target="_blank" className="c-header__social-link">
                                 <FaTiktok />
                             </a>
                         </nav>
+                    </div>
+                    <div className="section__deco section__deco2 deco__left">
+                        <img src={shapeOne} alt="Shape decoration" className="shape" />
                     </div>
                 </div>
                 <div className="c-nav__btns">

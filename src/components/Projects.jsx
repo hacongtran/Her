@@ -10,6 +10,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import khaiHoanNet from "../assets/khai_hoan_net.png";
 import adpLogo from "../assets/adp_logo.png";
 import workLogo from "../assets/works.png";
+import shapeOne from "../assets/shape-1.png";
 
 
 
@@ -145,7 +146,7 @@ const Project = () => {
                                 <span className="c-span1">
                                   <PiDotFill />
                                 </span>
-                                <h5>Thiết kế, edit video cho việc chạy ads</h5>
+                                <h5>Thiết kế, edit video </h5>
                             </div>
                             <div className="c-proitem2__row">
                               <p className="c-proitem2__uses c-proitem2__uses1">
@@ -284,6 +285,9 @@ const Project = () => {
                 </li>
             </ul>
          </div>
+         <div className="section__deco section__deco2 deco__left">
+            <img src={shapeOne} alt="Shape decoration" className="shape" />
+        </div>
     </section>
   )
 }

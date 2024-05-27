@@ -1,6 +1,7 @@
 import React from "react";
 import aoDoanImg1 from "../assets/smile.gif";
 import workIcon from "../assets/word.png";
+import shapeOne from "../assets/shape-1.png";
 import ppIcon from "../assets/powerpoint.png";
 import excelIcon from "../assets/excel.png";
 import canvaIcon from "../assets/canva.webp";
@@ -291,7 +292,7 @@ const Services = () => {
                          <li>
                               <div className="c-works__left">
                                    <h4 className="c-works__role">
-                                        Hỗ trợ viên xử lý dữ liệu<span>(Part time)</span>
+                                        Hỗ trợ viên xử lý dữ liệu<span> (Part time)</span>
                                    </h4>
                                    <div className="c-works__time">
                                          07/2022 - 09/2022
@@ -359,7 +360,7 @@ const Services = () => {
                          </h5>
                          <ul className="c-others__list">
                               <li>
-                                   MC, PG các chương trình, sự kiện (Mobifone, Senka,...)  - 2023
+                                   MC, PG các chương trình, sự kiện (Mobifone, Senka, ...)  - 2023
                               </li>
                               <li>
                                    Tình nguyên viên SEEN FESTIVAL - 07/2023
@@ -411,6 +412,9 @@ const Services = () => {
                          </div>
                     </div>
               </div>
+        </div>
+        <div className="section__deco section__deco2 deco__left">
+            <img src={shapeOne} alt="Shape decoration" className="shape" />
         </div>
      </section>
   )
