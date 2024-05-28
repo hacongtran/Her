@@ -95,7 +95,8 @@
     padding-block: 6px;
     line-height: 1;
     @include mobile{
-        font-size: 2rem;
+        font-size: 2.2rem;
+        font-family: var(--new-font);
     }
 }
 
