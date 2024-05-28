@@ -122,6 +122,11 @@
     @content;
   }
 }
+@mixin mac {
+  @media only screen and (max-width: 1366px)and (max-height: 700px) {
+    @content;
+  }
+}
 @mixin large {
   @media only screen and (max-width: 1560px) {
     @content;
