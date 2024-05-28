@@ -158,7 +158,7 @@ const Project = () => {
                             </div>
                             <ul className="c-videos__list">
                                 <li className="c-video__item">
-                                    <iframe src="https://www.youtube.com/embed/xJUNLE7kJRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/2HWJkz27YVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </li>    
                                 <li className="c-video__item">
                                     <iframe src="https://www.youtube.com/embed/gPc3PI8kwtw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

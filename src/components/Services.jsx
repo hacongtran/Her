@@ -326,7 +326,7 @@ const Services = () => {
                                         Admin
                                    </h4>
                                    <div className="c-works__time">
-                                         07/2022 - 09/2022
+                                         09/2020 - 05/2022
                                    </div>
                               </div>
                               <div className="c-works__right">
