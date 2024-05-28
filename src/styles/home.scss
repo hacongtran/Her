@@ -337,7 +337,10 @@
         color: var(--primary-color);
       }
       @include pp{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
+      }
+      @include mobile{
+        font-family: var(--new-font);
       }
     }
   }
